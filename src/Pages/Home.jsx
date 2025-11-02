@@ -4,7 +4,16 @@ import womenBanner from "../images/women-category-C5Ba_yVW.jpg";
 import menBanner from "../images/men-category-kks6z1Lv.jpg";
 import accessories from "../images/accessories-category-B24ti-2S.jpg";
 import { FaArrowRight } from "react-icons/fa6";
+import Feature from "@/components/Feature";
+import { products } from "../utils/data";
 const Home = () => {
+
+
+  
+
+
+
+
   return (
     <>
       <section className="relative h-[600px] overflow-hidden">
@@ -39,6 +48,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+
       <section className="bg-red-200/30 sm:w-full md:w-full h-[1400px] md:h-[600px] px-[120px]  md:mt-0 overflow-hidden">
         <div className="flex flex-col gap-4">
           <h1 className="text-5xl text-red-950  font-bold font-serif justify-center items-center flex mt-19">
@@ -118,6 +131,26 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+
+      <section className="h-[80vh]">
+        <h1>Featured Collection</h1>
+        <p>Handpicked pieces celebrating cultural craftsmanship</p>
+
+        <Feature products={products} />
+
+
+      </section>
+
+
+
+
+
+
+
+
     </>
   );
 };
