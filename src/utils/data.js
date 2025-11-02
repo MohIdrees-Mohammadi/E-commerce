@@ -11,6 +11,7 @@ import accessories from "../images/accessories-category-B24ti-2S.jpg";
       price: 79.99,
       imageUrl: womenBanner,
       category: "Women"
+      
     },
     {
       Id: 2,
@@ -29,4 +30,3 @@ import accessories from "../images/accessories-category-B24ti-2S.jpg";
       category: "Accessories"
     }
   ]
-
