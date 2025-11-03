@@ -178,6 +178,18 @@ const Home = () => {
       <section className="pt-10 bg-[#f5f3f3] pb-10">
         <h1 className=" text-[50px] font-family-serif font-bold text-center">What Our Customers Say</h1>
         <PeopleComment comments={comments} />
+
+        {/* JOIN OUR CULTURE JOURNEY  */}
+        <div className="flex  flex-col items-center gap-5 bg-red-400 h-[368px] pt-20 pb-20">
+          <h1 className="text-[48px] font-family-serif text-[#FBF3E9] font-bold">Join Our Cultural Journey</h1>
+          <p className="text-[20px] font-family-serif text-[#FBF3E9E6]">Subscribe to receive updates on new collections, exclusive offers, and<p className="text-center">cultural fashion inspiration.</p></p>
+          <div>
+            <input type="text" placeholder="Enter your email"
+            className="bg-[#FFFFFF] w-[300px] h-12 pl-6 pr-6 rounded-2xl pt-3 pb-3"
+            />
+            <button className="bg-[#F1B527] text-[#450817] text-[14px] font-family-serif pr-8 pl-8 h-11 w-[132px] rounded-2xl ml-5 hover:bg-[#915463]">Subscribe</button>
+          </div>
+        </div>
       </section>
     </>
   );
