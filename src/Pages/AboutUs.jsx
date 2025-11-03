@@ -90,8 +90,8 @@ const AboutUs = () => {
         </div>
       </div>
       {/* OUR COMMITMENT TO QUALITY  */}
-      <div className="bg-neutral-200/60">
-        <h1 className="text-center pt-15 pb-5 text-[#450817] text-[34px] font-serif font-bold">
+      <div className="bg-neutral-200/60 pb-30">
+        <h1 className="text-center pt-15 text-[#450817] text-[34px] font-serif font-bold">
           Our Commitment to Quality
         </h1>
         {/* CARDS  */}
@@ -127,7 +127,7 @@ const AboutUs = () => {
         </div>
       </div>
       {/* JOIN OUR JOURNEY  */}
-      <div className="flex  flex-col items-center gap-5 bg-[#B02D4E] h-[368px] mt-20 pt-20 pb-20">
+      <div className="flex  flex-col items-center gap-5 bg-[#B02D4E] h-[368px] pt-20 pb-20">
           <h1 className="text-[48px] font-family-serif text-[#FBF3E9] font-bold">
             Join Our Cultural Journey
           </h1>
