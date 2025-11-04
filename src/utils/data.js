@@ -30,7 +30,7 @@ import accessories from "../images/accessories-category-B24ti-2S.jpg";
       category: "Accessories"
     },
     {
-      Id: 3,
+      Id: 4,
       name: "Ethnic Accessories Set",
       description: "A set of handcrafted accessories from Country Z.",
       price: 39.99,

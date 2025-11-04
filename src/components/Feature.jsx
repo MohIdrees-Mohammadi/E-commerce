@@ -6,7 +6,7 @@ const Feature = ({ products }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-3 ">
       {products.map((product) => (
-        <div className="bg-white border border-gray-100 shadow rounded-2xl w-[300px] " key={product.Id}>
+        <div className="bg-white border border-gray-100 shadow rounded-2xl w-[300px] overflow-hidden" key={product.Id}>
           <img
             className="w-full rounded-t-2xl h-[390px] hover:scale-105 transition-transform duration-500 object-cover"
             src={product.imageUrl}
@@ -16,15 +16,15 @@ const Feature = ({ products }) => {
             <h2 className="font-family-serif font-bold text-[18px] mb-3 text-[#450817]">
               {product.name}
             </h2>
-            <p className="font-family-serif text-[18px] mb-3 text-[#8A5C67]">
+            <p className="font-family-serif text-[18px]  mb-3 text-[#8A5C67]">
               {product.description}
             </p>
             <div className="flex justify-between text-amber-400">
-            <p className="font-sans text-[15px]">
+            <p className="font-sans text-[20px]">
               Price: {product.price}$
             </p>
 
-            <h1 className="mb-3">
+            <h1 className="mb-3 text-[20px]">
               {product.category}
             </h1>
             </div>

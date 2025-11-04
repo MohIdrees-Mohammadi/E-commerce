@@ -64,82 +64,82 @@ const Home = () => {
           <Shop shopProducts={shopProducts} />
         </div>
       </section>
+ {/* FEATURED COLLECTIONS  */}
+<section className="pt-10 bg-[#E8E1D94C] flex flex-col justify-center items-center text-center px-4">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold pb-2">
+    Featured Collection
+  </h1>
+  <p className="text-base sm:text-lg md:text-xl font-serif text-[#8A5C67] pb-10 max-w-2xl">
+    Handpicked pieces celebrating cultural craftsmanship
+  </p>
 
-      {/* FEATURED COLLECTIONS  */}
-      <section className="pt-10 bg-[#E8E1D94C] flex flex-col justify-center items-center">
-        <h1 className="text-[48px] font-family-serif font-bold pb-2">
-          Featured Collection
-        </h1>
-        <p className="text-[18px] font-family-serif text-[#8A5C67] pb-10">
-          Handpicked pieces celebrating cultural craftsmanship
-        </p>
-        <Feature products={products} />
+  <Feature products={products} />
 
+  {/* BUTTON VIEW ALL PRODUCTS */}
+  <Link to="/shop">
+    <button className="flex bg-[#b02d4e] text-[#FBF3E9] px-8 py-3 mt-6 mb-10 rounded-2xl cursor-pointer text-sm sm:text-base hover:bg-[#8A223D] transition">
+      View All Products
+      <IoArrowForward className="ml-3 size-5" />
+    </button>
+  </Link>
+</section>
 
-        {/* BUTTON VIEW ALL PRODUCTS FAZLY-GIT */}
-        <Link to="/shop">
-          <button className="flex bg-[#b02d4e] text-[#FBF3E9] w-[30vh] h-11 items-center pl-8 pr-8 mb-10 rounded-2xl cursor-pointer">
-            View All Products
-            <IoArrowForward className="ml-3 size-5 " />
-          </button>
-        </Link>
-      </section>
+{/* OUR TRUSTED PARTNERS  */}
+<section className="bg-[#c2b2a233] pb-16 px-4">
+  <div className="flex flex-col justify-center items-center text-center">
+    <h1 className="pb-2 pt-10 text-3xl sm:text-4xl md:text-5xl font-serif font-bold">
+      Our Trusted Partners
+    </h1>
+    <p className="text-sm sm:text-base md:text-lg max-w-2xl text-[#8A5C67] font-serif mb-8">
+      We collaborate with renowned traditional artisans and cultural
+      fashion houses worldwide
+    </p>
+  </div>
 
-      {/* OUR TRUSTED PARTNERS  */}
-      <section className="bg-[#c2b2a233] pb-25">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="pb-2 pt-10 text-[48px] font-family-serif font-bold">
-            Our Trusted Partners
-          </h1>
-          <p className="text-[18px] w-[44%] text-center font-family-serif">
-            We collaborate with renowned traditional artisans and cultural
-            fashion houses worldwide
-          </p>
-        </div>
-        <TrustedPartenars partenars={partenars} />
+  <TrustedPartenars partenars={partenars} />
 
-        {/* PARTNERING WITH US  */}
-        <div className="flex  flex-col items-center gap-5">
-          <h1 className="text-[#8A5C67] text-[18px] font-family-serif">
-            Interested in partnering with us?
-          </h1>
-          <Link to="/contact">
-            <button className="flex border-3 text-[16px] font-bold font-family-serif text-[#450817] w-[32vh] h-11 items-center pl-8 pr-8 rounded-2xl cursor-pointer hover:bg-[#28BD98] hover:text-[#FFFFFF]">
-              Become a Partner
-              <IoArrowForward className="ml-3 size-5 " />
-            </button>
-          </Link>
-        </div>
-      </section>
+  {/* PARTNERING WITH US  */}
+  <div className="flex flex-col items-center gap-5 mt-10">
+    <h1 className="text-[#8A5C67] text-sm sm:text-base md:text-lg font-serif">
+      Interested in partnering with us?
+    </h1>
+    <Link to="/contact">
+      <button className="flex border border-[#450817] text-sm sm:text-base font-bold font-serif text-[#450817] px-6 py-2 rounded-2xl cursor-pointer hover:bg-[#28BD98] hover:text-[#FFFFFF] transition">
+        Become a Partner
+        <IoArrowForward className="ml-3 size-5" />
+      </button>
+    </Link>
+  </div>
+</section>
 
-      {/*  WHAT OUR CUSTOMERS SAY  */}
-      <section className="pt-10 bg-[#f5f3f3] pb-10">
-        <h1 className=" text-[50px] font-family-serif font-bold text-center">
-          What Our Customers Say
-        </h1>
-        <PeopleComment comments={comments} />
+{/* WHAT OUR CUSTOMERS SAY  */}
+<section className="pt-10 bg-[#f5f3f3] pb-10 px-4">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-center mb-10">
+    What Our Customers Say
+  </h1>
 
-        {/* JOIN OUR CULTURE JOURNEY  */}
-        <div className="flex  flex-col items-center gap-5 bg-red-400 h-[368px] pt-20 pb-20">
-          <h1 className="text-[48px] font-family-serif text-[#FBF3E9] font-bold">
-            Join Our Cultural Journey
-          </h1>
-          <p className="text-[20px] font-family-serif text-[#FBF3E9E6]">
-            Subscribe to receive updates on new collections, exclusive offers,
-            an cultural fashion inspiration.
-          </p>
-          <div>
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="bg-[#FFFFFF] w-[300px] h-12 pl-6 pr-6 rounded-2xl pt-3 pb-3"
-            />
-            <button className="bg-[#F1B527] text-[#450817] text-[14px] font-family-serif pr-8 pl-8 h-11 w-[132px] rounded-2xl ml-5 hover:bg-[#915463]">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
+  <PeopleComment comments={comments} />
+
+  {/* JOIN OUR CULTURE JOURNEY  */}
+  <div className="flex flex-col items-center gap-5 bg-[#b02d4e] text-center rounded-2xl mx-4 mt-16 px-6 py-10">
+    <h1 className="text-3xl sm:text-4xl font-serif text-[#FBF3E9] font-bold">
+      Join Our Cultural Journey
+    </h1>
+    <p className="text-base sm:text-lg font-serif text-[#FBF3E9E6] max-w-xl">
+      Subscribe to receive updates on new collections, exclusive offers, and cultural fashion inspiration.
+    </p>
+    <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      <input
+        type="text"
+        placeholder="Enter your email"
+        className="bg-[#FFFFFF] w-[250px] sm:w-[300px] h-12 px-4 rounded-2xl text-sm sm:text-base"
+      />
+      <button className="bg-[#F1B527] text-[#450817] text-sm sm:text-base font-serif px-6 py-2 rounded-2xl hover:bg-[#915463] transition">
+        Subscribe
+      </button>
+    </div>
+  </div>
+</section>
     </>
   );
 };
