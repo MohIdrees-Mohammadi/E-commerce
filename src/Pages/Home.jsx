@@ -18,8 +18,8 @@ import { CiShoppingCart } from "react-icons/ci";
 const Home = () => {
   return (
     <>
-      <section className="relative h-[600px] overflow-hidden">
-        <div className="absolute">
+      <section className="relative h-[750px] overflow-hidden">
+        <div className="absolute inset-0">
           <img
             src={heroBanner}
             alt="Heritage Fashion"

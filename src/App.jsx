@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './components/Header'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home'
 import Layout from './Pages/Layout'
