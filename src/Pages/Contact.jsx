@@ -54,7 +54,7 @@ const Contact = () => {
 
           <div className='w-full h-full  py-5 gap-5 flex flex-col'>
 
-            <h1 className='text-[#450817] text-3xl font-serif font-bold'>Get in Tou</h1>
+            <h1 className='text-[#450817] text-3xl font-serif font-bold'>Get in Touch</h1>
             <p className='mb-8 text-[#8A5C67] font-serif'>Have questions about our products, shipping, or custom orders? We're here to help.</p>
 
             <div className='w-full h-[80%] flex flex-col gap-10 mx-[-15px] lg:m-0'>
@@ -132,11 +132,6 @@ const Contact = () => {
         </div>
 
       </section>
-
-
-
-
-
 
     </div>
   )
