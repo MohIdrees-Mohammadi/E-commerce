@@ -12,6 +12,8 @@ import { partenars } from "@/utils/partenar";
 import { FaStar } from "react-icons/fa";
 import PeopleComment from "@/components/PeopleComment";
 import { comments } from "@/utils/comments";
+import { CiShoppingCart } from "react-icons/ci";
+
 
 const Home = () => {
   return (
@@ -49,6 +51,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* SHOP BY CATAGORIES  */}
       <section className="bg-red-200/30 w-full h-[1400px] md:h-[600px] px-[120px]  md:mt-0 overflow-hidden">
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl md:text-5xl text-red-950  font-bold font-serif justify-center items-center flex mt-19">
@@ -62,13 +65,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-[80vh]">
-        <h1>Featured Collection</h1>
-        <p>Handpicked pieces celebrating cultural craftsmanship</p>
-
-        <Feature products={products} />
-      </section>
-
+      {/* FEATURED COLLECTIONS  */}
       <section className="pt-10 bg-[#E8E1D94C] flex flex-col justify-center items-center">
         <h1 className="text-[48px] font-family-serif font-bold pb-2">
           Featured Collection
@@ -76,12 +73,12 @@ const Home = () => {
         <p className="text-[18px] font-family-serif text-[#8A5C67] pb-10">
           Handpicked pieces celebrating cultural craftsmanship
         </p>
-
         <Feature products={products} />
 
-        {/* BUTTON ALL PRODUCTS FAZLY-GIT */}
+
+        {/* BUTTON VIEW ALL PRODUCTS FAZLY-GIT */}
         <Link to="/shop">
-          <button className="flex bg-[#b02d4e] text-[#FBF3E9] w-[30vh] h-11 items-center pl-8 pr-8 rounded-2xl cursor-pointer">
+          <button className="flex bg-[#b02d4e] text-[#FBF3E9] w-[30vh] h-11 items-center pl-8 pr-8 mb-10 rounded-2xl cursor-pointer">
             View All Products
             <IoArrowForward className="ml-3 size-5 " />
           </button>
@@ -94,11 +91,10 @@ const Home = () => {
           <h1 className="pb-2 pt-10 text-[48px] font-family-serif font-bold">
             Our Trusted Partners
           </h1>
-          <p className="text-[18px] font-family-serif">
+          <p className="text-[18px] w-[44%] text-center font-family-serif">
             We collaborate with renowned traditional artisans and cultural
-            fashion houses
+            fashion houses worldwide
           </p>
-          <p className="text-[18px] font-family-serif">worldwide</p>
         </div>
         <TrustedPartenars partenars={partenars} />
 
@@ -130,7 +126,7 @@ const Home = () => {
           </h1>
           <p className="text-[20px] font-family-serif text-[#FBF3E9E6]">
             Subscribe to receive updates on new collections, exclusive offers,
-            and<p className="text-center">cultural fashion inspiration.</p>
+            an cultural fashion inspiration.
           </p>
           <div>
             <input
