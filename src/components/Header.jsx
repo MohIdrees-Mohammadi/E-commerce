@@ -18,7 +18,7 @@ const Header = () => {
   const [isEmpty, setIsEmpty] = React.useState(true);
 
   return (
-    <header className="bg-red-200/30 flex align items-center justify-between px-[120px] py-5">
+    <header className="bg-gray-100 sticky top-0 flex align items-center justify-between px-[120px] py-5 z-10">
       <h1 className='font-serif text-2xl font-bold'>Heritage Threads</h1>
 
       <nav className='flex gap-5'>
