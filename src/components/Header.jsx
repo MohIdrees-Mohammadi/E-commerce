@@ -68,20 +68,24 @@ const Header = () => {
         </Sheet>
 
         <div className='flex gap-2 items-center'>
-          <button className='px-3 py-2 bg-red-900/10 border border-red-100 font-bold text-red-900 rounded-md'>
+          <NavLink to='/signin' >
+          <button className='px-3 py-2 bg-red-900/10 border border-red-100 font-bold text-red-900 rounded-md hover:bg-[#28BD98] hover:text-white cursor-pointer'>
             <div className='flex gap-3 items-center'>
               <IoLogOutOutline size={20} />
               Sign in
             </div>
 
           </button>
-          <button className='px-3 py-2 bg-red-900 font-bold text-white rounded-md'>
+          </NavLink>
+          <NavLink to='/signup'>
+          <button className='px-3 py-2 bg-red-900 font-bold text-white rounded-md cursor-pointer'>
             <div className='flex gap-3 items-center'>
               <FiUserPlus size={20} />
               Sign up
             </div>
 
           </button>
+          </NavLink>
         </div>
       </div>
 

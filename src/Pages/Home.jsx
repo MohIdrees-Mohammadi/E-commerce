@@ -6,7 +6,7 @@ import { products } from "../utils/data";
 import Shop from "@/components/Shop";
 import { shopProducts } from "@/utils/newData";
 import { IoArrowForward } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import TrustedPartenars from "@/components/TrustedPartenars";
 import { partenars } from "@/utils/partenar";
 import { FaStar } from "react-icons/fa";
@@ -38,14 +38,18 @@ const Home = () => {
               tradition with modern elegance.
             </p>
             <div className="mt-5 flex">
+              <NavLink to="/shop">
               <button className="bg-yellow-500 cursor-pointer flex px-4 py-2 rounded items-center gap-3 font-semibold">
                 Shop Collection
                 <FaArrowRight />
               </button>
+              </NavLink>
+              <NavLink to="/about-us">
 
               <button className="bg-white cursor-pointer flex px-4 py-2 rounded items-center gap-3 ml-3 font-semibold">
                 Our Story
               </button>
+              </NavLink>
             </div>
           </div>
         </div>

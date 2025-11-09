@@ -1,13 +1,13 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './Pages/Home'
-import Layout from './Pages/Layout'
-import AboutUs from './Pages/AboutUs'
-import Shop from './Pages/Shop'
-import Auth from './Pages/Auth'
-import Contact from './Pages/Contact'
-
-
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Pages/Home";
+import Layout from "./Pages/Layout";
+import AboutUs from "./Pages/AboutUs";
+import Shop from "./Pages/Shop";
+import Auth from "./Pages/Auth";
+import Contact from "./Pages/Contact";
+import Signin from "./Pages/Signin";
+import Signup from "./Pages/Signup";
 
 const router = createBrowserRouter([
   {
@@ -16,34 +16,38 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/auth",
-        element: <Auth />
-      }, 
+        element: <Auth />,
+      },
       {
         path: "/shop",
-        element: <Shop />
-
+        element: <Shop />,
       },
       {
         path: "/contact",
-        element: <Contact />
+        element: <Contact />,
       },
       {
         path: "/about-us",
-        element: <AboutUs />
-      }
-    ]
-  }
-])
-
+        element: <AboutUs />,
+      },
+    ],
+  },
+  {
+    path: "/signin",
+    element: <Signin />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+]);
 
 const App = () => {
-  return (
-    <RouterProvider router={router} />
-  )
-}
+  return <RouterProvider router={router} />;
+};
 
-export default App
+export default App;
